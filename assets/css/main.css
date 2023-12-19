@@ -3993,14 +3993,11 @@ blockquote span {
 .header-slider .slick-dots li button:before {
   background-color: transparent;
   border: solid 3px #0073e6;
+  border-radius: 50%;
 }
 
 .header-slider .slick-dots li.slick-active button:before {
   background-color: #0073e6;
-}
-
-.header-slider .slick-dots {
-  bottom: 36px;
 }
 
 .header-slider .slick-prev {
