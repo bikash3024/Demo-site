@@ -1121,8 +1121,8 @@ ol {
   }
 }
 .header {
-  width: 100%;
-  background: 0 0;
+  background-color: #fff !important;
+  box-shadow: 0 3px 3px 0 rgba(112, 126, 140, 0.09);
   position: absolute;
   width: 100%;
   left: 0;
@@ -1324,8 +1324,8 @@ ol {
 }
 .header .button .btn {
   background-color: transparent;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #2588fa;
+  color: #888;
   padding: 12px 30px;
 }
 .header .button .btn:hover {
@@ -1378,7 +1378,7 @@ ol {
   margin-right: auto !important;
 }
 .header .navbar .navbar-nav .nav-item a.active {
-  color: #fff;
+  color: #888;
 }
 .sticky .navbar .navbar-nav .nav-item a.active {
   color: #2588fa;
@@ -1471,7 +1471,7 @@ ol {
 }
 .navbar-nav .nav-item a {
   font-size: 15px;
-  color: #fff;
+  color: #888;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   position: relative;
@@ -1628,8 +1628,8 @@ ol {
 }
 .hero-area {
   position: relative;
-  padding: 180px 0 120px;
-  background: #2588fa;
+  padding: 150px 0 100px;
+  background: #f2f9ff;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-area {
@@ -1664,7 +1664,7 @@ ol {
   font-size: 38px;
   font-weight: 800;
   line-height: 50px;
-  color: #fff;
+  color: #2588fa;
   text-shadow: 0 3px 8px #00000017;
   text-transform: capitalize;
 }
@@ -1672,74 +1672,8 @@ ol {
   display: block;
 }
 .hero-area .hero-content p {
-  margin-top: 30px;
   font-size: 15px;
-  color: #fff;
-}
-.hero-area .hero-content .button {
-  margin-top: 40px;
-}
-.hero-area .hero-content .button .btn {
-  background-color: #fff;
-  color: #2588fa;
-  margin-right: 12px;
-}
-.hero-area .hero-content .button .btn i {
-  font-size: 17px;
-}
-.hero-area .hero-content .button .btn:hover {
-  background-color: #081828;
-  color: #fff;
-}
-.hero-area .hero-content .button .btn.btn-alt {
-  background-color: #ffffff6b;
-  color: #fff;
-}
-.hero-area .hero-content .button .btn.btn-alt:hover {
-  background-color: #fff;
-  color: #2588fa;
-}
-@media (max-width: 767px) {
-  .hero-area .hero-content .button .video-button {
-    margin-top: 20px;
-  }
-}
-.hero-area .hero-content .button .video-button .text {
-  display: inline-block;
-  margin-left: 15px;
-  color: #fff;
-  font-weight: 500;
-}
-.hero-area .hero-content .button .video-button:hover .video {
-  color: #fff;
-  background-color: #081828;
-}
-.hero-area .hero-content .button .video-button .video {
-  height: 50px;
-  width: 50px;
-  line-height: 50px;
-  text-align: center;
-  color: #2588fa;
-  background-color: #fff;
-  border-radius: 50%;
-  margin-left: 10px;
-  font-size: 16px;
-  padding-left: 3px;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  position: relative;
-}
-.hero-area .hero-content .button .video-button .video:before {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  -webkit-animation: pulse-border-2 2s linear infinite;
-  animation: pulse-border-2 2s linear infinite;
+  color: #888;
 }
 @-webkit-keyframes pulse-border {
   0% {
@@ -4026,4 +3960,63 @@ blockquote span {
 }
 .tab-pane {
   color: #ffffff;
+}
+
+/* Hero slider */
+
+.header-slider .slick-arrow {
+  width: 40px;
+  height: 40px;
+}
+
+.header-slider .slick-prev,
+.header-slider .slick-prev:hover,
+.header-slider .slick-prev:focus {
+  background: url(/assets/images/slider-left-arrow.svg) no-repeat 0 0;
+}
+
+.header-slider .slick-next,
+.header-slider .slick-next:hover,
+.header-slider .slick-next:focus {
+  background: url(/assets/images/slider-right-arrow.svg) no-repeat 0 0;
+}
+
+.header-slider .slick-arrow:hover:not(.slick-disabled) {
+  opacity: 0.6;
+}
+
+.header-slider .slick-disabled {
+  opacity: 0.3;
+  cursor: auto;
+}
+
+.header-slider .slick-dots li button:before {
+  background-color: transparent;
+  border: solid 3px #0073e6;
+}
+
+.header-slider .slick-dots li.slick-active button:before {
+  background-color: #0073e6;
+}
+
+.header-slider .slick-dots {
+  bottom: 36px;
+}
+
+.header-slider .slick-prev {
+  left: -50px;
+}
+
+.header-slider .slick-next {
+  right: -70px;
+}
+
+.header-slider .slick-next,
+.header-slider .slick-prev {
+  top: 54%;
+}
+
+.header-image {
+  max-width: 100%;
+  max-height: 600px;
 }
